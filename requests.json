@@ -1,0 +1,2616 @@
+[
+    {
+        "name": "bridge.get_discussion, post (1419 comments)",
+        "method": "bridge.get_discussion",
+        "params": ["steemitblog", "feedback-wanted-communities-design-document"]
+    },
+    {
+        "name": "bridge.get_discussion, post (24 comments)",
+        "method": "bridge.get_discussion",
+        "params": ["moecki", "moecki-witness-update-october-2023"]
+    },
+    {
+        "name": "bridge.get_profile, account",
+        "method": "bridge.get_profile",
+        "params": ["moecki"]
+    },
+    {
+        "name": "bridge.get_trending_topics, max limit 25, no observer",
+        "method": "bridge.get_trending_topics",
+        "params": {"limit":25}
+    },
+    {
+        "name": "bridge.get_trending_topics, max limit 25, observer",
+        "method": "bridge.get_trending_topics",
+        "params": {"limit":25, "observer":"remlaps"}
+    },
+    {
+        "name":"bridge.get_post, post (1413 votes), observer still not implemented",
+        "method":"bridge.get_post",
+        "params":{"author": "steemchiller", "permlink":"steemchiller-goes-witness-let-s-make-steem-safe-again"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, no tag = global",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, low limit 1, no tag = global",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 1}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, no tag = global, start_permlink",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "start_author": "forealife", "start_permlink": "6f6hop"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, no tag = global",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, no tag = global",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, no tag = global",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag steemexclusive",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "steemexclusive"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag steemexclusive, start_permlink",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "steemexclusive", "start_author": "mohinahmed", "start_permlink": "lxpce-or-or"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, tag steemexclusive",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100, "tag": "steemexclusive"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, tag steemexclusive",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100, "tag": "steemexclusive"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, tag steemexclusive",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100, "tag": "steemexclusive"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag book",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "book"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag book, start_permlink",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "book", "start_author": "mich0405", "start_permlink": "6vsbek-7-26"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, tag book",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100, "tag": "book"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, tag book",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100, "tag": "book"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, tag book",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100, "tag": "book"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag my, observer remlaps",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "my", "observer": "remlaps"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, tag my, observer remlaps",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100, "tag": "my", "observer": "remlaps"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, tag my, observer remlaps",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100, "tag": "my", "observer": "remlaps"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, tag my, observer remlaps",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100, "tag": "my", "observer": "remlaps"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag my, observer barski (following 16T)",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "my", "observer": "barski"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, tag my, observer barski (following 16T)",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100, "tag": "my", "observer": "barski"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, tag my, observer barski (following 16T)",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100, "tag": "my", "observer": "barski"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, tag my, observer barski (following 16T)",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100, "tag": "my", "observer": "barski"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort trending, max limit 100, tag hive-185836 = community trends",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "trending", "limit": 100, "tag": "hive-185836"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort created, max limit 100, tag hive-185836 = community trends",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "created", "limit": 100, "tag": "hive-185836"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort hot, max limit 100, tag hive-185836 = community trends",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "hot", "limit": 100, "tag": "hive-185836"}
+    },
+    {
+        "name":"bridge.get_ranked_posts, sort payout, max limit 100, tag hive-185836 = community trends",
+        "method":"bridge.get_ranked_posts",
+        "params":{"sort": "payout", "limit": 100, "tag": "hive-185836"}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps (normal following), sort feed, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "feed", "account": "remlaps", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account barski (16T following), sort feed, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "feed", "account": "barski", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps (normal following), sort feed, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "feed", "account": "remlaps", "limit": 100, "start_author": "etainclub", "start_permlink": "6629ef-12"}
+    },
+    {
+        "name":"bridge.get_account_posts, account barski (16T following), sort feed, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "feed", "account": "barski", "limit": 100, "start_author": "nevlu123", "start_permlink": "5mz19s"}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps (normal following), sort blog, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "blog", "account": "remlaps", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account barski (16T following), sort blog, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "blog", "account": "barski", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps (normal following), sort blog, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "feed", "account": "remlaps", "limit": 100, "start_author": "vesislava", "start_permlink": "premiere-of-forest-tale"}
+    },
+    {
+        "name":"bridge.get_account_posts, account barski (16T following), sort blog, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "blog", "account": "barski", "limit": 100, "start_author": "barski", "start_permlink": "lying-time"}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort posts, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "posts", "account": "remlaps", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort posts, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "posts", "account": "remlaps", "limit": 100, "start_author": "remlaps", "start_permlink": "five-phases-of-steem-inflation"}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort comments, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "comments", "account": "remlaps", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort posts, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "comments", "account": "remlaps", "limit": 100, "start_author": "remlaps", "start_permlink": "se1ls5"}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort replies, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "replies", "account": "remlaps", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account remlaps, sort replies, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "replies", "account": "remlaps", "limit": 100, "start_author": "lupega", "start_permlink": "sdqnpn"}
+    },
+    {
+        "name":"bridge.get_account_posts, account steem-seven, sort payout, max limit 100",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "payout", "account": "steem-seven", "limit": 100}
+    },
+    {
+        "name":"bridge.get_account_posts, account steem-seven, sort payout, max limit 100, start_permlink",
+        "method":"bridge.get_account_posts",
+        "params":{ "sort": "payout", "account": "steem-seven", "limit": 100, "start_author": "steem-seven", "start_permlink": "w0izaofkhjd-curation-seven-team-alert-b9ofd4qblx9"}
+    },
+    {
+        "name":"bridge.list_all_subscriptions, account joeyarnoldvn (many communities)",
+        "method":"bridge.list_all_subscriptions",
+        "params":{"account": "joeyarnoldvn"}
+    },
+    {
+        "name":"bridge.get_community, hive-name (many subscriber), observer",
+        "method":"bridge.get_community",
+        "params":{"name":"hive-172186", "observer":"the-gorilla"}
+    },
+    {
+        "name":"bridge.get_community_context, hive-name, account",
+        "method":"bridge.get_community_context",
+        "params":{"name":"hive-146118", "account":"moecki"}
+    },
+    {
+        "name":"bridge.list_subscribers, hive-name (many subscriber)",
+        "method":"bridge.list_subscribers",
+        "params":{"name":"hive-172186"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort rank",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"rank"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort new",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"new"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort subs",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"subs"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort rank, observer joeyarnoldvn (many communities)",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"rank", "observer":"joeyarnoldvn"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort new, observer joeyarnoldvn (many communities)",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"new", "observer":"joeyarnoldvn"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort subs, observer joeyarnoldvn (many communities)",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"subs", "observer":"joeyarnoldvn"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort rank, observer joeyarnoldvn (many communities), last",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"rank", "observer":"joeyarnoldvn", "last":"hive-109855"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort new, observer joeyarnoldvn (many communities), last",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"new", "observer":"joeyarnoldvn", "last":"hive-109855"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort subs, observer joeyarnoldvn (many communities), last",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"subs", "observer":"joeyarnoldvn", "last":"hive-109855"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort rank, observer joeyarnoldvn (many communities), query",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"rank", "observer":"joeyarnoldvn", "query":"crypto"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort new, observer joeyarnoldvn (many communities), query",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"new", "observer":"joeyarnoldvn", "query":"crypto"}
+    },
+    {
+        "name":"bridge.list_communities, max limit 100, sort subs, observer joeyarnoldvn (many communities), query",
+        "method":"bridge.list_communities",
+        "params":{"limit":100, "sort":"subs", "observer":"joeyarnoldvn", "query":"crypto"}
+    },
+    {
+        "name":"bridge.list_community_roles, hive-name, high limit 1000",
+        "method":"bridge.list_community_roles",
+        "params":{"community": "hive-185836", "limit":1000}
+    },
+    {
+        "name":"bridge.list_community_roles, hive-name, low limit 100",
+        "method":"bridge.list_community_roles",
+        "params":{"community": "hive-185836", "limit":100}
+    },
+    {
+        "name":"bridge.get_payout_stats, max limit 250",
+        "method":"bridge.get_payout_stats",
+        "params":{"limit":250}
+    },
+    {
+        "name":"bridge.get_payout_stats, low limit 10",
+        "method":"bridge.get_payout_stats",
+        "params":{"limit":10}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), normal min_score 25, max limit 100",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":25, "limit":100}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), medium min_score 20, max limit 100",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":20, "limit":100}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), low min_score 10, max limit 100",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":10, "limit":100}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), normal min_score 25, limit 25",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":25, "limit":25}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), medium min_score 20, limit 25",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":20, "limit":25}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), low min_score 10, limit 25",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":10, "limit":25}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), normal min_score 25, limit 25, last_id",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":25, "limit":25, "last_id": 88492522}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), medium min_score 20, limit 25, last_id",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":20, "limit":25, "last_id": 89092109}
+    },
+    {
+        "name":"bridge.post_notifications, author, permlink (many notifs), low min_score 10, limit 25, last_id",
+        "method":"bridge.post_notifications",
+        "params":{"author":"chariot", "permlink":"78q825vnh10", "min_score":10, "limit":25, "last_id": 89092109}
+    },
+    {
+        "name":"bridge.account_notifications, account, normal min_score 25, max limit 100",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":25, "limit":100}
+    },
+    {
+        "name":"bridge.account_notifications, account, medium min_score 20, max limit 100",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":20, "limit":100}
+    },
+    {
+        "name":"bridge.account_notifications, account, low min_score 10, max limit 100",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":10, "limit":100}
+    },
+    {
+        "name":"bridge.account_notifications, account, normal min_score 25, limit 25",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":25, "limit":25}
+    },
+    {
+        "name":"bridge.account_notifications, account, medium min_score 20, limit 25",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":20, "limit":25}
+    },
+    {
+        "name":"bridge.account_notifications, account, low min_score 10, max limit 25",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":10, "limit":25}
+    },
+    {
+        "name":"bridge.account_notifications, account, normal min_score 25, limit 25, last_id",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":25, "limit":25, "last_id": 99655458}
+    },
+    {
+        "name":"bridge.account_notifications, account, medium min_score 20, limit 25, last_id",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":20, "limit":25, "last_id": 99760048}
+    },
+    {
+        "name":"bridge.account_notifications, account, low min_score 10, max limit 25, last_id",
+        "method":"bridge.account_notifications",
+        "params":{"account":"moecki", "min_score":10, "limit":25, "last_id": 99760329}
+    },
+    {
+        "name":"bridge.unread_notifications, account, normal min_score 25",
+        "method":"bridge.unread_notifications",
+        "params":{"account":"moecki", "min_score":25}
+    },
+    {
+        "name":"bridge.unread_notifications, account, low min_score 10",
+        "method":"bridge.unread_notifications",
+        "params":{"account":"moecki", "min_score":10}
+    },
+    {
+        "name":"bridge.unread_notifications, account (high unread), normal min_score 25",
+        "method":"bridge.unread_notifications",
+        "params":{"account":"meins0815", "min_score":25}
+    },
+    {
+        "name":"bridge.unread_notifications, account (high unread), low min_score 10",
+        "method":"bridge.unread_notifications",
+        "params":{"account":"meins0815", "min_score":10}
+    },
+    {
+        "name":"bridge.get_post_header, author, permlink",
+        "method":"bridge.get_post_header",
+        "params":{"author":"moecki", "permlink": "tschuess-bitvavo-meine-coins-sind-jetzt-sicher"}
+    },
+    {
+        "name":"bridge.normalize_post, steemd-post-object",
+        "method":"bridge.normalize_post",
+        "params":{"post":{
+            "id": 109009483,
+            "author": "moecki",
+            "permlink": "tschuess-bitvavo-meine-coins-sind-jetzt-sicher",
+            "category": "hive-146118",
+            "parent_author": "",
+            "parent_permlink": "hive-146118",
+            "title": "Tschüß Bitvavo - Meine Coins sind jetzt sicher",
+            "body": "*Hier wurde schon mehrfach darüber berichtet, dass Bitvavo seine deutschen Kunden rausschmeißt. Der Tag, an dem das alles final passieren soll, rückt immer näher, steht sozusagen bereits vor der Tür. Wir hatten hier diskutiert, welche Alternativen es gibt. Es wurde also Zeit, zur Tat zu schreiten.*\n\nDie STEEM, die ich noch in der Bitvavo-Wallet hatte, sind kurzerhand zu HTX gewandert. Da kann ich die auch irgendwann wieder verscherbeln, wenn der Kurs wieder besser ist. Habe lange überlegt, ob ich sie einfach zum Aufpowern auf die eigene Wallet schicken soll. Ich habe mich dann aber dagegen entschieden; momentan wollte ich einfach nicht mehr investieren. Die Nutzung für ein anderes Projekt, war mangels Umsetzungsreife auch nicht sinnvoll...\n\nSo mussten also nur noch die ETH untergebracht werden. @michelangelo3 hatte erfreulicherweise viele [Vorschläge](/deutsch/@michelangelo3/auf-der-suche-nach-ersatz-fuer-bitvavo) für externe Börsen gemacht. Für Interessierte sei das Lesen der Kommentare ebenfalls sehr empfohlen.\nEs gibt zwar mit Coinmerce eine Plattform, die ich für mögliche kleinere STEEM-Käufe und für kurzfristiges Halten kleinerer Coin-Beträge nutze, aber für mehr fehlt mir da doch das Vertrauen. Also musste noch eine andere Alternative her.\n\n<div class=pull-right>\n\n[![75_ledger.png](https://cdn.steemitimages.com/DQmXmXEwH1UKuieqFXeG2JPLV2Z5JEsBiGbBVwKhffmtBVT/75_ledger.png)](https://cdn.steemitimages.com/DQmXmXEwH1UKuieqFXeG2JPLV2Z5JEsBiGbBVwKhffmtBVT/75_ledger.png)\n\n</div>\n\n#### Hardware-Wallet\nDie beste und sicherste Variante ist und bleibt wohl eine eigene Hardware-Wallet. @chriddi hatte vor einiger Zeit ihren Ledger (mehr oder weniger ernsthaft) hier angeboten. Ich habe schon überlegt, sie zu fragen, ob sie ihn noch loswerden möchte. Just in dem Moment gab es aber von [Ledger](https://www.ledger.com/de) selbst ein gutes Angebot.  Also habe ich einen neuen [Ledger Nano S Plus](https://shop.ledger.com/de/products/ledger-nano-s-plus/retro-gaming) bestellt... (ich kann gern einen Vorteils-Code zur Verfügung stellen, falls noch jemand zugreifen möchte)\n\nDer Einrichtungsprozess ist ziemlich einfach. Für eine Einführung hatte ich mir das [hier](/hive-146118/@michelangelo3/rwmg0i) verlinkte Video angeschaut. Je nach Ledger-Variante sind Tasten/Display ein wenig anders, aber vom Grundsatz passt es schon. Ich will die Einrichtung hier gar nicht groß ausbreiten. Das ist wirklich nicht kompliziert. Man muss im Grunde nur die Ledger Live App installieren. In der App wird man Schritt für Schritt durch den Einrichtungsprozess geführt. \n\n**Wichtig:** Für eine möglicherweise notwendige **Wiederherstellung** müssen unbedingt die 24 Wörter, die das Gerät während des Einrichtungsprozesses nacheinander ausgibt, **aufgeschrieben** werden... und **nicht digital speichern**. Es gibt dafür sogar mehrere kleine Kärtchen in der Ledger Box.\n\n#### Coin-Transfer\nNachdem die Einrichtung nun nach rund 20 Minuten erledigt war, wollte ich natürlich auch einen Transfer ausprobieren. \nFür jeden Coin muss man auf dem Ledger eine App installieren. Auch das geht mit der Ledger Live App sehr einfach. Wenn die ETH-App eingerichtet ist, wird auch die ETH-Adresse angezeigt, an die die Coins überwiesen werden müssen.\n\nDer Adress-Verifizierungs-Prozess bei Bitvavo, der in meinen Anfangszeiten ziemlich [aufwändig](/hive-146118/@moecki/steem-adressbestaetigung-bei-bitvavo-schlaegt-fehl) war, ging jetzt sehr schnell und einfach. Die Adresse, die vom Ledger angezeigt wurde, und ein Haken bei „eigene Adresse“ reichte schon. Nach einer E-Mail-Bestätigung war die Adresse auch schon freigeschalten.\n\nJetzt ging es an den Transfer. Als erstes habe ich nur einen kleinen Betrag überwiesen. Man weiß ja nie… Adresse und Betrag eingetragen… und dann... was ist das? Eine Transaktionsgebühr? Kennen wir vom Steem ja überhaupt nicht. Wie ich lernen durfte, ist  der Gasprice unterschiedlich hoch, je nach Auslastung der Blockchain. Ich habe dann diese [Gasprice-Übersicht](https://etherscan.io/gastracker#heatmap_gasprice) genutzt. Gerade war wohl ein guter Zeitpunkt.\nUnd dann…. nach ein paar Minuten waren die ETH in der Ledger Live App zu sehen:\n\n<center>[![75_app6.png](https://cdn.steemitimages.com/DQmV2Jkhjqk3Hd8B7SggqxddxRPt8gmeTgYpWck9VUJ3FrC/75_app6.png)](https://cdn.steemitimages.com/DQmV2Jkhjqk3Hd8B7SggqxddxRPt8gmeTgYpWck9VUJ3FrC/75_app6.png)</center>\n\nDen gesamten Betrag hatte ich dann in den Folgetagen transferiert. Den Gasprice im Blick habe ich eine günstige Gelegenheit genutzt. \nSo, die Coins sind jetzt sicher unter **meiner** Ledger Adresse auf der Blockchain hinterlegt. \n\nJetzt kann Bitvavo den Laden meinetwegen endgültig schließen – also wenn chriddi auch aufgeräumt hat 😉 … und ich kann beruhigt ein paar PC-freie Tage genießen….\n\nHappy Holiday 😊 \n\n---\n---\n\n<div class=pull-right>20.07.2024</div>Foto/Screenshot: moecki\n<center>https://steemitimages.com/DQmZZhnSVXhDF9rKLqs5wa3wLavQVkEGrf8uNfFUVmTFStm/Trennlinie02.png</center>\n<center><h3><a href=\"https://steemitwallet.com/~witnesses#:~:text=moecki\">Vote for me as Witness</a></h3></center><br>\n\n**Deutsch Unplugged** auf https://moecki.online/hive-146118\n**[Steem-Suche](/hive-146118/@moecki/steem-suche-03-2023)** auf https://moecki.online/\n<center>https://steemitimages.com/DQmZZhnSVXhDF9rKLqs5wa3wLavQVkEGrf8uNfFUVmTFStm/Trennlinie02.png\nhttps://cdn.steemitimages.com/DQmTw4VEGqBQjPcvoHkgEbENiUWtUgw6WCZXbZUgWKsMiYD/PU-Banner.jpg\n<sup><b>Banner</b> with kind permission of chriddi</sup>",
+            "json_metadata": "{\"tags\":[\"ledger\",\"wallet\",\"bitvavo\",\"deutsch\",\"steemexclusive\"],\"users\":[\"michelangelo3\",\"chriddi\"],\"image\":[\"https://cdn.steemitimages.com/DQmXmXEwH1UKuieqFXeG2JPLV2Z5JEsBiGbBVwKhffmtBVT/75_ledger.png\",\"https://cdn.steemitimages.com/DQmV2Jkhjqk3Hd8B7SggqxddxRPt8gmeTgYpWck9VUJ3FrC/75_app6.png\",\"https://steemitimages.com/DQmZZhnSVXhDF9rKLqs5wa3wLavQVkEGrf8uNfFUVmTFStm/Trennlinie02.png\",\"https://cdn.steemitimages.com/DQmTw4VEGqBQjPcvoHkgEbENiUWtUgw6WCZXbZUgWKsMiYD/PU-Banner.jpg\"],\"links\":[\"/deutsch/@michelangelo3/auf-der-suche-nach-ersatz-fuer-bitvavo\",\"https://cdn.steemitimages.com/DQmXmXEwH1UKuieqFXeG2JPLV2Z5JEsBiGbBVwKhffmtBVT/75_ledger.png\",\"https://www.ledger.com/de\",\"https://shop.ledger.com/de/products/ledger-nano-s-plus/retro-gaming\",\"/hive-146118/@michelangelo3/rwmg0i\",\"/hive-146118/@moecki/steem-adressbestaetigung-bei-bitvavo-schlaegt-fehl\",\"https://etherscan.io/gastracker#heatmap_gasprice\",\"https://cdn.steemitimages.com/DQmV2Jkhjqk3Hd8B7SggqxddxRPt8gmeTgYpWck9VUJ3FrC/75_app6.png\",\"https://steemitwallet.com/~witnesses#:~:text=moecki\",\"https://moecki.online/hive-146118\",\"/hive-146118/@moecki/steem-suche-03-2023\",\"https://moecki.online/\"],\"app\":\"steemit/0.2\",\"format\":\"markdown\"}",
+            "last_update": "2024-07-20T18:45:27",
+            "created": "2024-07-20T18:45:27",
+            "active": "2024-07-26T21:47:03",
+            "last_payout": "2024-07-27T18:45:27",
+            "depth": 0,
+            "children": 19,
+            "net_rshares": 0,
+            "abs_rshares": 0,
+            "vote_rshares": 0,
+            "children_abs_rshares": "2540465952138",
+            "cashout_time": "1969-12-31T23:59:59",
+            "max_cashout_time": "1969-12-31T23:59:59",
+            "total_vote_weight": 0,
+            "reward_weight": 10000,
+            "total_payout_value": "29.408 SBD",
+            "curator_payout_value": "35.941 SBD",
+            "author_rewards": 112872,
+            "net_votes": 189,
+            "root_author": "moecki",
+            "root_permlink": "tschuess-bitvavo-meine-coins-sind-jetzt-sicher",
+            "max_accepted_payout": "1000000.000 SBD",
+            "percent_steem_dollars": 10000,
+            "allow_replies": true,
+            "allow_votes": true,
+            "allow_curation_rewards": true,
+            "beneficiaries": [
+                {
+                    "account": "elkezaksek",
+                    "weight": 1000
+                },
+                {
+                    "account": "wox-helpfund",
+                    "weight": 1000
+                }
+            ],
+            "url": "/hive-146118/@moecki/tschuess-bitvavo-meine-coins-sind-jetzt-sicher",
+            "root_title": "Tschüß Bitvavo - Meine Coins sind jetzt sicher",
+            "pending_payout_value": "0.000 SBD",
+            "total_pending_payout_value": "0.000 STEEM",
+            "active_votes": [
+                {
+                    "voter": "fractalnode",
+                    "weight": 105,
+                    "rshares": 2604406041,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "mohamed-shebl",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "xpilar",
+                    "weight": 22534,
+                    "rshares": "557700197765",
+                    "percent": 2500,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:48"
+                },
+                {
+                    "voter": "remlaps",
+                    "weight": 35967,
+                    "rshares": "231603535726",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:02:27"
+                },
+                {
+                    "voter": "kibela",
+                    "weight": 165,
+                    "rshares": 4106925158,
+                    "percent": 3000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "germansailor",
+                    "weight": 161967,
+                    "rshares": "569450857218",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:33"
+                },
+                {
+                    "voter": "kiwiscanfly",
+                    "weight": 203757,
+                    "rshares": "2225164342551",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:45:48"
+                },
+                {
+                    "voter": "skysnap",
+                    "weight": 78,
+                    "rshares": 1950151846,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "afrog",
+                    "weight": 31245,
+                    "rshares": "363459111614",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T21:21:45"
+                },
+                {
+                    "voter": "erikaflynn",
+                    "weight": 130,
+                    "rshares": 3248261229,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "fortune-master",
+                    "weight": 503,
+                    "rshares": "7002210538",
+                    "percent": 9200,
+                    "reputation": 0,
+                    "time": "2024-07-21T12:27:51"
+                },
+                {
+                    "voter": "jhelbich",
+                    "weight": 293,
+                    "rshares": "7314438907",
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:57"
+                },
+                {
+                    "voter": "iansart",
+                    "weight": 6,
+                    "rshares": 154353051,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "heriadi",
+                    "weight": 57246,
+                    "rshares": "747647168298",
+                    "percent": 3700,
+                    "reputation": 0,
+                    "time": "2024-07-21T03:49:12"
+                },
+                {
+                    "voter": "sam99",
+                    "weight": 21,
+                    "rshares": 513722130,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:46:57"
+                },
+                {
+                    "voter": "pennsif",
+                    "weight": 461690,
+                    "rshares": "5724896775976",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:28:06"
+                },
+                {
+                    "voter": "pisolutionsmru",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "galas",
+                    "weight": 5,
+                    "rshares": 106955832,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "likedeeler",
+                    "weight": 20740,
+                    "rshares": "226660711159",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:31:30"
+                },
+                {
+                    "voter": "ahlawat",
+                    "weight": 1470,
+                    "rshares": "36685238221",
+                    "percent": 700,
+                    "reputation": 0,
+                    "time": "2024-07-25T11:17:36"
+                },
+                {
+                    "voter": "alfredogarc",
+                    "weight": 47,
+                    "rshares": 1190564404,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "karja",
+                    "weight": 392256,
+                    "rshares": "1299166215786",
+                    "percent": 1200,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:49:45"
+                },
+                {
+                    "voter": "floatinglin",
+                    "weight": 339,
+                    "rshares": "4711645624",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T12:32:39"
+                },
+                {
+                    "voter": "leveuf",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 3000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "steemit-bank",
+                    "weight": 173,
+                    "rshares": "4313022591",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:47:57"
+                },
+                {
+                    "voter": "stef1",
+                    "weight": 439604,
+                    "rshares": "6509002072199",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T21:45:45"
+                },
+                {
+                    "voter": "jasonmunapasee",
+                    "weight": 16,
+                    "rshares": 75867272,
+                    "percent": 240,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:33"
+                },
+                {
+                    "voter": "parzifal1",
+                    "weight": 753,
+                    "rshares": "18537963586",
+                    "percent": 7500,
+                    "reputation": 0,
+                    "time": "2024-07-22T05:37:00"
+                },
+                {
+                    "voter": "steemflower",
+                    "weight": 135515,
+                    "rshares": "1030973044653",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:30:30"
+                },
+                {
+                    "voter": "ultravioletmag",
+                    "weight": 204,
+                    "rshares": "5052557072",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "axeman",
+                    "weight": 287,
+                    "rshares": "7140275403",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "publicumaurora",
+                    "weight": 38,
+                    "rshares": 944428768,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "mister-omortson",
+                    "weight": 54396,
+                    "rshares": "763098806027",
+                    "percent": 9500,
+                    "reputation": 0,
+                    "time": "2024-07-21T13:40:57"
+                },
+                {
+                    "voter": "iaberius",
+                    "weight": 116,
+                    "rshares": 2893888027,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:06"
+                },
+                {
+                    "voter": "johnboywalton",
+                    "weight": 5977,
+                    "rshares": "147236540203",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-22T20:11:30"
+                },
+                {
+                    "voter": "steembasicincome",
+                    "weight": 209566,
+                    "rshares": "945344295908",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:06"
+                },
+                {
+                    "voter": "rebe.torres12",
+                    "weight": 113,
+                    "rshares": 1339861456,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:18"
+                },
+                {
+                    "voter": "chriddi",
+                    "weight": 691728,
+                    "rshares": "6319165013804",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:33:18"
+                },
+                {
+                    "voter": "jesusjacr",
+                    "weight": 9449,
+                    "rshares": "105264568357",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:50:39"
+                },
+                {
+                    "voter": "peppermint24",
+                    "weight": 1431,
+                    "rshares": "20200721101",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T15:27:24"
+                },
+                {
+                    "voter": "marc-allaria",
+                    "weight": 13,
+                    "rshares": 333470326,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:49:57"
+                },
+                {
+                    "voter": "udabeu",
+                    "weight": 11601,
+                    "rshares": "43757644697",
+                    "percent": 7700,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:33"
+                },
+                {
+                    "voter": "ckole",
+                    "weight": 0,
+                    "rshares": 7368331,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "anatolianwishdom",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 100,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "felixgarciap",
+                    "weight": 4,
+                    "rshares": 98497303,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "hasenmann",
+                    "weight": 210,
+                    "rshares": "5156391450",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-23T07:19:27"
+                },
+                {
+                    "voter": "sjomeath",
+                    "weight": 12,
+                    "rshares": 292192445,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:50:18"
+                },
+                {
+                    "voter": "videoaddiction",
+                    "weight": 169,
+                    "rshares": 4216765232,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:57"
+                },
+                {
+                    "voter": "indextrader24",
+                    "weight": 22891,
+                    "rshares": "264892062655",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T21:13:57"
+                },
+                {
+                    "voter": "suanky",
+                    "weight": 29,
+                    "rshares": 729753840,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:48:57"
+                },
+                {
+                    "voter": "jorgebgt",
+                    "weight": 2475,
+                    "rshares": "29291878084",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:03"
+                },
+                {
+                    "voter": "arcoiris",
+                    "weight": 783,
+                    "rshares": "19501744704",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "joseantpp",
+                    "weight": 5,
+                    "rshares": 109242693,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "razzor",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "sbi2",
+                    "weight": 173001,
+                    "rshares": "754298076857",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:12"
+                },
+                {
+                    "voter": "ouzzi",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "barmbo",
+                    "weight": 13241,
+                    "rshares": "184010225043",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T11:29:30"
+                },
+                {
+                    "voter": "cihatt",
+                    "weight": 3,
+                    "rshares": 66290546,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "atego",
+                    "weight": 14375,
+                    "rshares": "106066918060",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:25:54"
+                },
+                {
+                    "voter": "nodex",
+                    "weight": 3728,
+                    "rshares": "40498722282",
+                    "percent": 7700,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:30:18"
+                },
+                {
+                    "voter": "isotonic",
+                    "weight": 724,
+                    "rshares": "18051383352",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:49:57"
+                },
+                {
+                    "voter": "event-horizon",
+                    "weight": 41225,
+                    "rshares": "250559447394",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:59:21"
+                },
+                {
+                    "voter": "steemitbloggers",
+                    "weight": 520,
+                    "rshares": "12934631482",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "sbi3",
+                    "weight": 120530,
+                    "rshares": "581035441066",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:18"
+                },
+                {
+                    "voter": "robmolecule",
+                    "weight": 24,
+                    "rshares": 132765582,
+                    "percent": 11,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:52:42"
+                },
+                {
+                    "voter": "sbi4",
+                    "weight": 83643,
+                    "rshares": "423244552018",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:39"
+                },
+                {
+                    "voter": "adrianhadjii",
+                    "weight": 2349,
+                    "rshares": "58690801226",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-27T10:33:39"
+                },
+                {
+                    "voter": "sean2masaaki",
+                    "weight": 754,
+                    "rshares": "10238957075",
+                    "percent": 1100,
+                    "reputation": 0,
+                    "time": "2024-07-21T08:03:15"
+                },
+                {
+                    "voter": "kirstin",
+                    "weight": 20340,
+                    "rshares": "281652301001",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T11:16:48"
+                },
+                {
+                    "voter": "xiguang",
+                    "weight": 504380,
+                    "rshares": "2189472380656",
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:49:57"
+                },
+                {
+                    "voter": "theluvbug",
+                    "weight": 483,
+                    "rshares": "12046420003",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "greece-lover",
+                    "weight": 192993,
+                    "rshares": "1111956424693",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:55:45"
+                },
+                {
+                    "voter": "manuelgil64",
+                    "weight": 58,
+                    "rshares": 1454938880,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "lightcaptured",
+                    "weight": 1505,
+                    "rshares": "4959910037",
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:33"
+                },
+                {
+                    "voter": "damayanti21",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "dses",
+                    "weight": 720,
+                    "rshares": "17955391147",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "dirasurjan",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "sbi5",
+                    "weight": 65804,
+                    "rshares": "341444931456",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:45"
+                },
+                {
+                    "voter": "pixa",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 40,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "sbi6",
+                    "weight": 49963,
+                    "rshares": "264405761640",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:51"
+                },
+                {
+                    "voter": "kebunsyurga",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "soulsdetour",
+                    "weight": 31457,
+                    "rshares": "188670360910",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:58:27"
+                },
+                {
+                    "voter": "bigpower",
+                    "weight": 42,
+                    "rshares": 1026449438,
+                    "percent": 3000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "eddybless",
+                    "weight": 5,
+                    "rshares": 92818750,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "sbi7",
+                    "weight": 35397,
+                    "rshares": "190079234914",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:57"
+                },
+                {
+                    "voter": "harkar",
+                    "weight": 97118,
+                    "rshares": "274300592480",
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:49:45"
+                },
+                {
+                    "voter": "riottales",
+                    "weight": 22,
+                    "rshares": 546785147,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "dlike",
+                    "weight": 15439,
+                    "rshares": "172417950833",
+                    "percent": 1900,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:50:45"
+                },
+                {
+                    "voter": "davosimple",
+                    "weight": 1,
+                    "rshares": 52389270,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "remlaps-lite",
+                    "weight": 41381,
+                    "rshares": "262635384508",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:02:06"
+                },
+                {
+                    "voter": "cultus-forex",
+                    "weight": 543,
+                    "rshares": 2037753301,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:33"
+                },
+                {
+                    "voter": "reetuahlawat",
+                    "weight": 281,
+                    "rshares": "7024336193",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-25T12:29:51"
+                },
+                {
+                    "voter": "bntcamelo",
+                    "weight": 215,
+                    "rshares": 2549883256,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:12"
+                },
+                {
+                    "voter": "sbi8",
+                    "weight": 30804,
+                    "rshares": "167319339844",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:51:06"
+                },
+                {
+                    "voter": "fulani",
+                    "weight": 8,
+                    "rshares": 195020079,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:59:57"
+                },
+                {
+                    "voter": "jenam",
+                    "weight": 67,
+                    "rshares": 789820842,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:36"
+                },
+                {
+                    "voter": "sbi9",
+                    "weight": 20051,
+                    "rshares": "109875077198",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:51:18"
+                },
+                {
+                    "voter": "rosauradels",
+                    "weight": 172,
+                    "rshares": 2043078531,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:27"
+                },
+                {
+                    "voter": "necho41",
+                    "weight": 108,
+                    "rshares": 1277182322,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:45"
+                },
+                {
+                    "voter": "wpblogger-de",
+                    "weight": 5,
+                    "rshares": 138544153,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-23T16:36:12"
+                },
+                {
+                    "voter": "angelik-a",
+                    "weight": 59,
+                    "rshares": 1467812279,
+                    "percent": 2800,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "mflegerbein",
+                    "weight": 12064,
+                    "rshares": "129233400393",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:04:57"
+                },
+                {
+                    "voter": "michelangelo3",
+                    "weight": 323662,
+                    "rshares": "2235279896032",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:05:27"
+                },
+                {
+                    "voter": "bippe",
+                    "weight": 26094,
+                    "rshares": "649280674745",
+                    "percent": 2500,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:48"
+                },
+                {
+                    "voter": "e-r-k-a-n",
+                    "weight": 581,
+                    "rshares": "14478035518",
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "hingsten",
+                    "weight": 28609,
+                    "rshares": "709896795819",
+                    "percent": 2500,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:48"
+                },
+                {
+                    "voter": "supportfan",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:27"
+                },
+                {
+                    "voter": "babschnae",
+                    "weight": 20776,
+                    "rshares": "224344184192",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:26:45"
+                },
+                {
+                    "voter": "don-t",
+                    "weight": 3317,
+                    "rshares": "39242523639",
+                    "percent": 3300,
+                    "reputation": 0,
+                    "time": "2024-07-20T22:09:45"
+                },
+                {
+                    "voter": "dknkyz",
+                    "weight": 35,
+                    "rshares": 891657420,
+                    "percent": 880,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "kryptodenno",
+                    "weight": 122798,
+                    "rshares": "1645698327228",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T06:59:06"
+                },
+                {
+                    "voter": "ninjacyber",
+                    "weight": 38,
+                    "rshares": 968732585,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "ummah",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "info-brocker",
+                    "weight": 1029,
+                    "rshares": "14225721905",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T10:42:30"
+                },
+                {
+                    "voter": "alejandrobons",
+                    "weight": 10,
+                    "rshares": 249324461,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "lafamilia",
+                    "weight": 8,
+                    "rshares": 206704805,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "borodas",
+                    "weight": 8,
+                    "rshares": 224599147,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "sparschwein",
+                    "weight": 2978,
+                    "rshares": "10782676352",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:42"
+                },
+                {
+                    "voter": "muzack1",
+                    "weight": 35137,
+                    "rshares": "463250822945",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T04:16:21"
+                },
+                {
+                    "voter": "zeruxanime",
+                    "weight": 15,
+                    "rshares": 370404605,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "enrisanti",
+                    "weight": 2582,
+                    "rshares": "64470568631",
+                    "percent": 5000,
+                    "reputation": 0,
+                    "time": "2024-07-25T01:22:03"
+                },
+                {
+                    "voter": "tokenindustry",
+                    "weight": 1400,
+                    "rshares": "5078119510",
+                    "percent": 7700,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:42"
+                },
+                {
+                    "voter": "dr-autoflower",
+                    "weight": 13276,
+                    "rshares": "142063868159",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:45:00"
+                },
+                {
+                    "voter": "gannibal",
+                    "weight": 2,
+                    "rshares": 51188003,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "axeman-dblog",
+                    "weight": 1,
+                    "rshares": 26230685,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "levi-miron",
+                    "weight": 388,
+                    "rshares": "5402380872",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T11:37:30"
+                },
+                {
+                    "voter": "rus-actnearn",
+                    "weight": 2,
+                    "rshares": 27127184,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "rus-lifestyle",
+                    "weight": 17,
+                    "rshares": 445484970,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "rus-bpc",
+                    "weight": 4,
+                    "rshares": 100338596,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "rus-talent",
+                    "weight": 3,
+                    "rshares": 81423041,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "schlensbens1",
+                    "weight": 585,
+                    "rshares": "7935541642",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T07:06:18"
+                },
+                {
+                    "voter": "steemlatintrail",
+                    "weight": 0,
+                    "rshares": 26995472,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "minimoke",
+                    "weight": 17,
+                    "rshares": 420821953,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:47:57"
+                },
+                {
+                    "voter": "doppley",
+                    "weight": 3,
+                    "rshares": 76053743,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "steemcurator01",
+                    "weight": 6016550,
+                    "rshares": "135350071047698",
+                    "percent": 3300,
+                    "reputation": 0,
+                    "time": "2024-07-22T00:18:27"
+                },
+                {
+                    "voter": "steemcurator03",
+                    "weight": 1621874,
+                    "rshares": "17844601767026",
+                    "percent": 4500,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:35:06"
+                },
+                {
+                    "voter": "steemgoon",
+                    "weight": 78,
+                    "rshares": 426875365,
+                    "percent": 229,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:52:33"
+                },
+                {
+                    "voter": "theatrorve",
+                    "weight": 45,
+                    "rshares": 1105511308,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "worldofxpilar",
+                    "weight": 26886,
+                    "rshares": "663724302186",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:48"
+                },
+                {
+                    "voter": "lovveday",
+                    "weight": 2,
+                    "rshares": 21102425,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:54:57"
+                },
+                {
+                    "voter": "vhenom",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "melanur",
+                    "weight": 381,
+                    "rshares": "9477024244",
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "leonelb",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:49:57"
+                },
+                {
+                    "voter": "peacemakers",
+                    "weight": 1,
+                    "rshares": 10649068,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:55:03"
+                },
+                {
+                    "voter": "pricelesspresh",
+                    "weight": 1,
+                    "rshares": 35343722,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "fombae",
+                    "weight": 2912,
+                    "rshares": "72669931888",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:54:57"
+                },
+                {
+                    "voter": "team-acdes",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:27"
+                },
+                {
+                    "voter": "luceero",
+                    "weight": 1,
+                    "rshares": 11054527,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "emmyp",
+                    "weight": 104,
+                    "rshares": 2592533527,
+                    "percent": 300,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:46:27"
+                },
+                {
+                    "voter": "deathtox",
+                    "weight": 141,
+                    "rshares": 3518477041,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "hive-151446",
+                    "weight": 227,
+                    "rshares": "5665629850",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "boss75",
+                    "weight": 9,
+                    "rshares": 245808114,
+                    "percent": 800,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "graciee20",
+                    "weight": 3,
+                    "rshares": 82693118,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "hopekel",
+                    "weight": 33,
+                    "rshares": 120222518,
+                    "percent": 5000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:42"
+                },
+                {
+                    "voter": "motriks",
+                    "weight": 9,
+                    "rshares": 217015307,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "steemgoon.cur",
+                    "weight": 289,
+                    "rshares": 1604814054,
+                    "percent": 500,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:55:42"
+                },
+                {
+                    "voter": "kinkyamiee",
+                    "weight": 37,
+                    "rshares": 949295666,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "yoshi361",
+                    "weight": 115,
+                    "rshares": 2888948689,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "roaguz",
+                    "weight": 166,
+                    "rshares": 4151631831,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "grow2gether",
+                    "weight": 396,
+                    "rshares": 2200086793,
+                    "percent": 64,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:53:27"
+                },
+                {
+                    "voter": "curxx",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "degeimar",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "quentindeschamps",
+                    "weight": 1891,
+                    "rshares": "47118173659",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:57"
+                },
+                {
+                    "voter": "miss-t",
+                    "weight": 3,
+                    "rshares": 92086092,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "benson6",
+                    "weight": 49,
+                    "rshares": 1219076994,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "chacaraca",
+                    "weight": 55,
+                    "rshares": 1381365885,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "veterinino",
+                    "weight": 89,
+                    "rshares": 2217505172,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "kaiemann",
+                    "weight": 29,
+                    "rshares": 718630644,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:47:57"
+                },
+                {
+                    "voter": "pedroacc",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 600,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "tr-voter",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "beewrites",
+                    "weight": 3,
+                    "rshares": 49820008,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "aedr",
+                    "weight": 11,
+                    "rshares": 252490340,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "hoppee",
+                    "weight": 1,
+                    "rshares": 23862933,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "emmyrubby",
+                    "weight": 1,
+                    "rshares": 33565661,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "kolpacino",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "xaviduran",
+                    "weight": 1442,
+                    "rshares": "35980583266",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:54:57"
+                },
+                {
+                    "voter": "josemen",
+                    "weight": 5,
+                    "rshares": 122262725,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "yova",
+                    "weight": 45,
+                    "rshares": 537170071,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T01:21:54"
+                },
+                {
+                    "voter": "jane-mary",
+                    "weight": 20,
+                    "rshares": 504521030,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "sinerjii",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "diary-macro",
+                    "weight": 2,
+                    "rshares": 78676545,
+                    "percent": 400,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "nanggroe-steem",
+                    "weight": 1,
+                    "rshares": 4307981,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T01:15:18"
+                },
+                {
+                    "voter": "arzum",
+                    "weight": 1,
+                    "rshares": 23952553,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "adventurer21",
+                    "weight": 2,
+                    "rshares": 37760098,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "celin-ce",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:49:15"
+                },
+                {
+                    "voter": "deutschunplugged",
+                    "weight": 113460,
+                    "rshares": "555685678676",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:33"
+                },
+                {
+                    "voter": "ubongudofot",
+                    "weight": 9556,
+                    "rshares": "133157944123",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T13:13:33"
+                },
+                {
+                    "voter": "wattooboy",
+                    "weight": 1,
+                    "rshares": 17848459,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "weisser-rabe",
+                    "weight": 70013,
+                    "rshares": "822442926192",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T21:29:30"
+                },
+                {
+                    "voter": "alibhatti",
+                    "weight": 2,
+                    "rshares": 18850054,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "wking-chili",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "saadsaleemadil",
+                    "weight": 0,
+                    "rshares": 18174061,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "zeehive",
+                    "weight": 1,
+                    "rshares": 18479767,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "doohjane",
+                    "weight": 2,
+                    "rshares": 63074566,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "far.away",
+                    "weight": 75560,
+                    "rshares": "469230780592",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:00:33"
+                },
+                {
+                    "voter": "ibe2021",
+                    "weight": 11,
+                    "rshares": 284936542,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "kendra237",
+                    "weight": 9,
+                    "rshares": 196888542,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "steempromoevent",
+                    "weight": 1,
+                    "rshares": 22922510,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "janicenini",
+                    "weight": 2,
+                    "rshares": 49540349,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:55:03"
+                },
+                {
+                    "voter": "hanna716",
+                    "weight": 41,
+                    "rshares": 223760661,
+                    "percent": 114,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:52:42"
+                },
+                {
+                    "voter": "lamba12",
+                    "weight": 1,
+                    "rshares": 18226782,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:06"
+                },
+                {
+                    "voter": "o1eh",
+                    "weight": 167350,
+                    "rshares": "1901660245992",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T21:07:30"
+                },
+                {
+                    "voter": "geniusdg",
+                    "weight": 2,
+                    "rshares": 26451352,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "viachioma97",
+                    "weight": 0,
+                    "rshares": 3404183,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "steemcuan01",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:18"
+                },
+                {
+                    "voter": "narutotero13",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "elizalml",
+                    "weight": 1,
+                    "rshares": 22743537,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "samalesly",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:55:03"
+                },
+                {
+                    "voter": "smartangel",
+                    "weight": 2,
+                    "rshares": 29163025,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "sonofremi",
+                    "weight": 1,
+                    "rshares": 21265639,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "ngumpers",
+                    "weight": 0,
+                    "rshares": 9571812,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:55:03"
+                },
+                {
+                    "voter": "boylikegirl.wit",
+                    "weight": 20039,
+                    "rshares": "79420444237",
+                    "percent": 436,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:48:00"
+                },
+                {
+                    "voter": "kesybliss",
+                    "weight": 212,
+                    "rshares": "5310179470",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "realib1",
+                    "weight": 6,
+                    "rshares": 150058950,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "manoad",
+                    "weight": 0,
+                    "rshares": 17385936,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "liams1",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "hive-109690",
+                    "weight": 10168,
+                    "rshares": "49794393096",
+                    "percent": 300,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:21"
+                },
+                {
+                    "voter": "ndzewiyi-bery",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:55:03"
+                },
+                {
+                    "voter": "nmabest",
+                    "weight": 1,
+                    "rshares": 28960409,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "desirebecky",
+                    "weight": 11,
+                    "rshares": 284434008,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "okson",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "dermax006",
+                    "weight": 1,
+                    "rshares": 33487744,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:00"
+                },
+                {
+                    "voter": "ikechuk",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 100,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "elizaloreto",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:21"
+                },
+                {
+                    "voter": "sager31",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:50:18"
+                },
+                {
+                    "voter": "emem1985",
+                    "weight": 2,
+                    "rshares": 58396043,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T01:14:57"
+                },
+                {
+                    "voter": "whitie",
+                    "weight": 6,
+                    "rshares": 151508404,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "real-me",
+                    "weight": 9,
+                    "rshares": 217556183,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:57"
+                },
+                {
+                    "voter": "graciella",
+                    "weight": 7,
+                    "rshares": 197776328,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:54:57"
+                },
+                {
+                    "voter": "fonjougiresse",
+                    "weight": 36,
+                    "rshares": 892170583,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "rasyana",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "akb01",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "steem-punks",
+                    "weight": 20443,
+                    "rshares": "113157594780",
+                    "percent": 60,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:52:45"
+                },
+                {
+                    "voter": "saravanann",
+                    "weight": 635,
+                    "rshares": "15857514002",
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "o5otaesik",
+                    "weight": 14,
+                    "rshares": 365621769,
+                    "percent": 800,
+                    "reputation": 0,
+                    "time": "2024-07-25T01:14:57"
+                },
+                {
+                    "voter": "campingclub",
+                    "weight": 12964,
+                    "rshares": "63242002404",
+                    "percent": 300,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:21"
+                },
+                {
+                    "voter": "anithamoorthy",
+                    "weight": 2,
+                    "rshares": 42914122,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "blackmedschn",
+                    "weight": 4782,
+                    "rshares": "26355926554",
+                    "percent": 6776,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:52:42"
+                },
+                {
+                    "voter": "growwithme",
+                    "weight": 8,
+                    "rshares": 193473890,
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "suntr",
+                    "weight": 226695,
+                    "rshares": "1043191543938",
+                    "percent": 1000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:50:15"
+                },
+                {
+                    "voter": "mogui",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "ranartblog",
+                    "weight": 1179,
+                    "rshares": "29399691057",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "steemgoon.witnez",
+                    "weight": 3741,
+                    "rshares": "20585777733",
+                    "percent": 1147,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:51:27"
+                },
+                {
+                    "voter": "cilo",
+                    "weight": 3,
+                    "rshares": 81465130,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "du-finanzbot",
+                    "weight": 5234,
+                    "rshares": "29112378660",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:55:12"
+                },
+                {
+                    "voter": "yrika",
+                    "weight": 545,
+                    "rshares": "13598295412",
+                    "percent": 1200,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "bryanfer981",
+                    "weight": 0,
+                    "rshares": 0,
+                    "percent": 1,
+                    "reputation": 0,
+                    "time": "2024-07-20T18:58:42"
+                },
+                {
+                    "voter": "bonaventure24",
+                    "weight": 1228,
+                    "rshares": "30613486706",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "vickyyakpan",
+                    "weight": 19,
+                    "rshares": 495019213,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "lifetrail",
+                    "weight": 82978,
+                    "rshares": "1136430918745",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-21T09:59:36"
+                },
+                {
+                    "voter": "alms",
+                    "weight": 56,
+                    "rshares": 1400930684,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:09"
+                },
+                {
+                    "voter": "chriary",
+                    "weight": 2247,
+                    "rshares": "23982030237",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T19:35:06"
+                },
+                {
+                    "voter": "steempromoution",
+                    "weight": 316,
+                    "rshares": "7900711038",
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:49:57"
+                },
+                {
+                    "voter": "photo-process",
+                    "weight": 12,
+                    "rshares": 314315053,
+                    "percent": 4000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:50:57"
+                },
+                {
+                    "voter": "steem-aware",
+                    "weight": 2,
+                    "rshares": 23092080,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "soulfuldreamer",
+                    "weight": 22973,
+                    "rshares": "253760818115",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:33:12"
+                },
+                {
+                    "voter": "mhizta",
+                    "weight": 159,
+                    "rshares": 3951932107,
+                    "percent": 2000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:45:12"
+                },
+                {
+                    "voter": "coghlan",
+                    "weight": 53,
+                    "rshares": 573140493,
+                    "percent": 2100,
+                    "reputation": 0,
+                    "time": "2024-07-20T20:38:06"
+                },
+                {
+                    "voter": "miloxxx",
+                    "weight": 60,
+                    "rshares": 1499254902,
+                    "percent": 400,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:47:57"
+                },
+                {
+                    "voter": "wox-bonus-trail",
+                    "weight": 4591,
+                    "rshares": "113151769426",
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-25T00:44:36"
+                },
+                {
+                    "voter": "cryptmojo",
+                    "weight": 9,
+                    "rshares": 231699562,
+                    "percent": 10000,
+                    "reputation": 0,
+                    "time": "2024-07-25T03:51:24"
+                }
+            ],
+            "replies": [],
+            "author_reputation": "140153365023950",
+            "promoted": "0.000 STEEM",
+            "body_length": 0,
+            "reblogged_by": []
+        }}
+    }
+]

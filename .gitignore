@@ -1,4 +1,6 @@
 # Own
+results.csv
+statistics.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
