@@ -12,7 +12,7 @@ REQUESTS_FILE = "requests.json"
 DATA_FILE_PATH = os.path.join(OUTPUT_DIR, "results.csv")
 STATS_FILE_PATH = os.path.join(OUTPUT_DIR, "statistics.csv")
 EXEC_INTERVAL_HOURS = 1  # in hours
-WAIT_TIME_SECONDS = 1  # in seconds
+WAIT_TIME_SECONDS = 5  # in seconds
 
 
 async def perform_http_request(method, params):
