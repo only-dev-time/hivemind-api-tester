@@ -267,7 +267,7 @@
     {
         "name":"bridge.list_subscribers, hive-name (many subscriber)",
         "method":"bridge.list_subscribers",
-        "params":{"name":"hive-172186"}
+        "params":{"community":"hive-172186"}
     },
     {
         "name":"bridge.list_communities, max limit 100, sort rank",
