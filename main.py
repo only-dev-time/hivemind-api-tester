@@ -45,6 +45,7 @@ async def main():
     with open(DATA_FILE_PATH, mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["timestamp", "method", "duration", "error"])
+        file.flush()
 
         while datetime.now() < end_time:
             for request in methods:
@@ -56,6 +57,7 @@ async def main():
                 writer.writerow([datetime.now(), name, duration, error_message])
                 await asyncio.sleep(WAIT_TIME_SECONDS)
                 # break
+            file.flush()
             await asyncio.sleep(interval.total_seconds())
             # break
 
