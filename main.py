@@ -1,11 +1,12 @@
 import json
+import os
 import time
 import asyncio
 import csv
 from datetime import datetime, timedelta
 import aiohttp
 
-SERVER_URL = "https://api2.moecki.online/"
+SERVER_URL = os.getenv("SERVER_URL", "https://api.moecki.online/")
 DATA_FILE = "results.csv"
 REQUESTS_FILE = "requests.json"
 STATS_FILE = "statistics.csv"
@@ -13,7 +14,7 @@ EXEC_INTERVAL_HOURS = 1  # in hours
 WAIT_TIME_SECONDS = 1  # in seconds
 
 
-async def test_http_request(method, params):
+async def perform_http_request(method, params):
     async with aiohttp.ClientSession() as session:
         json_data = {"jsonrpc": "2.0", "method": method, "params": params, "id": 1}
         headers = {"Content-Type": "application/json"}
@@ -49,7 +50,7 @@ async def main():
                 name = request["name"]
                 method = request["method"]
                 params = request["params"]
-                duration, error_message = await test_http_request(method, params)
+                duration, error_message = await perform_http_request(method, params)
                 # print(f"Method {name} took {duration:.4f} seconds")
                 writer.writerow([datetime.now(), name, duration, error_message])
                 await asyncio.sleep(WAIT_TIME_SECONDS)
