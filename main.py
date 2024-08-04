@@ -7,9 +7,10 @@ from datetime import datetime, timedelta
 import aiohttp
 
 SERVER_URL = os.getenv("SERVER_URL", "https://api.moecki.online/")
-DATA_FILE = "results.csv"
+OUTPUT_DIR = "/app/output"
 REQUESTS_FILE = "requests.json"
-STATS_FILE = "statistics.csv"
+DATA_FILE_PATH = os.path.join(OUTPUT_DIR, "results.csv")
+STATS_FILE_PATH = os.path.join(OUTPUT_DIR, "statistics.csv")
 EXEC_INTERVAL_HOURS = 1  # in hours
 WAIT_TIME_SECONDS = 1  # in seconds
 
@@ -41,7 +42,7 @@ async def main():
     end_time = datetime.now() + timedelta(days=1)
     interval = timedelta(hours=EXEC_INTERVAL_HOURS)
 
-    with open(DATA_FILE, mode="w", newline="") as file:
+    with open(DATA_FILE_PATH, mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["timestamp", "method", "duration", "error"])
 
@@ -60,9 +61,9 @@ async def main():
 
 
 # Berechnung der maximalen, minimalen und durchschnittlichen Zeiten
-def calculate_statistics(csv_file):
+def calculate_statistics():
     durations = {}
-    with open(csv_file) as file:
+    with open(DATA_FILE_PATH) as file:
         reader = csv.DictReader(file)
         for row in reader:
             method_name = row["method"]
@@ -73,7 +74,7 @@ def calculate_statistics(csv_file):
                     durations[method_name] = []
                 durations[method_name].append(duration)
 
-    with open(STATS_FILE, mode="w", newline="") as file:
+    with open(STATS_FILE_PATH, mode="w", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(["method", "max_time", "min_time", "avg_time(ms)"])
 
@@ -87,4 +88,4 @@ def calculate_statistics(csv_file):
 
 if __name__ == "__main__":
     asyncio.run(main())
-    calculate_statistics(DATA_FILE)
+    calculate_statistics()
