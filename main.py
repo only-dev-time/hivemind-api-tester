@@ -69,11 +69,11 @@ def calculate_statistics():
         reader = csv.DictReader(file)
         for row in reader:
             method_name = row["method"]
-            duration = float(row["duration"])
+            duration = row["duration"]
+            if method_name not in durations:
+                durations[method_name] = []
             if duration:
                 duration = float(duration)
-                if method_name not in durations:
-                    durations[method_name] = []
                 durations[method_name].append(duration)
 
     with open(STATS_FILE_PATH, mode="w", newline="") as file:
@@ -81,11 +81,14 @@ def calculate_statistics():
         writer.writerow(["method", "max_time", "min_time", "avg_time(ms)"])
 
         for method_name, times in durations.items():
-            max_time = int(max(times) * 1000)
-            min_time = int(min(times) * 1000)
-            avg_time = int((sum(times) / len(times)) * 1000)
-            writer.writerow([method_name, max_time, min_time, avg_time])
-            # print(f"Method {method_name}: Max = {max_time:.4f}, Min = {min_time:.4f}, Avg = {avg_time:.4f}")
+            if times:
+                max_time = int(max(times) * 1000)
+                min_time = int(min(times) * 1000)
+                avg_time = int((sum(times) / len(times)) * 1000)
+                writer.writerow([method_name, max_time, min_time, avg_time])
+                # print(f"Method {method_name}: Max = {max_time:.4f}, Min = {min_time:.4f}, Avg = {avg_time:.4f}")
+            else:
+                writer.writerow([method_name, "No successful response", "N/A", "N/A"])
 
 
 if __name__ == "__main__":
